@@ -31,3 +31,5 @@ select * from msg;
 
 10:快速清空表
 truncate 表名
+
+11:lxtest
