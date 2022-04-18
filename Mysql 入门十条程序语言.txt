@@ -1,35 +1,33 @@
-1£ºÁ¬½Óµ½Êı¾İ¿â·şÎñÆ÷
-mysql -h host -u root -p ÃÜÂë
+1ï¼šè¿æ¥åˆ°æ•°æ®åº“æœåŠ¡å™¨
+mysql -h host -u root -p å¯†ç 
 
-2£º²é¿´ËùÓĞ¿â
+2ï¼šæŸ¥çœ‹æ‰€æœ‰åº“
 show databases;
 
-3£ºÑ¡¿â
-use ¿âÃû
+3ï¼šé€‰åº“
+use åº“å
 
-4£º²é¿´¿âÏÂÃæµÄ±í
+4ï¼šæŸ¥çœ‹åº“ä¸‹é¢çš„è¡¨
 show tables
 
-5£º½¨±í
-create table msg(       //msg ÊÇÄãÒª½¨µÄ±íÃû
-id int auto_increment primary key, // ¶Ô±íÖĞµÄÏîÄ¿½øĞĞ¶¨Òå
+5ï¼šå»ºè¡¨
+create table msg(       //msg æ˜¯ä½ è¦å»ºçš„è¡¨å
+id int auto_increment primary key, // å¯¹è¡¨ä¸­çš„é¡¹ç›®è¿›è¡Œå®šä¹‰
 content varchar(200),
 pubtime int 
 )charset utf8
 
-6£º¸æËß·şÎñÆ÷ÄãµÄ×Ö·û¼¯
+6ï¼šå‘Šè¯‰æœåŠ¡å™¨ä½ çš„å­—ç¬¦é›†
 set name gbk/utf8/....;
 
-7:Ìí¼ÓÊı¾İ
-insert into msg(id,content,pubtime) values (1,'¶ºÄãÍæ¡®£¬12443£©£»
+7:æ·»åŠ æ•°æ®
+insert into msg(id,content,pubtime) values (1,'é€—ä½ ç©â€˜ï¼Œ12443ï¼‰ï¼›
 
-8£º²éÑ¯ËùÓĞÊı¾İ
+8ï¼šæŸ¥è¯¢æ‰€æœ‰æ•°æ®
 select * from msg;
 
-9:°´id²éÑ¯Ò»ĞĞ
+9:æŒ‰idæŸ¥è¯¢ä¸€è¡Œ
 select * from msg;
 
-10:¿ìËÙÇå¿Õ±í
-truncate ±íÃû
-
-11:lxtest
+10:å¿«é€Ÿæ¸…ç©ºè¡¨
+truncate è¡¨å
